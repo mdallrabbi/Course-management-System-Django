@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>
+      {% block title %}
+      Django Project || Index
+      {% endblock %}
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <style>
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    footer {
+      background-color: #bdbdbd;
+      padding: 25px;
+    }
+  </style>
+</head>
+
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">DjangoProject</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://127.0.0.1:8000/admin/">Django Admin</a></li>
+        <li><a href="http://127.0.0.1:8000/dr01/">DIRECTORY - 01</a></li>
+        <li><a href="http://127.0.0.1:8000/dr02/">DIRECTORY - 02</a></li>
+        <li><a href="http://127.0.0.1:8000/dr03/">DIRECTORY - 03</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+{% block content %}
+<div class="jumbotron">
+  <div class="container text-center">
+    <h3>DJDR01WBFL01VL</h3>
+    <p>Some text that represents "Me"...</p>
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h3>Some of my Work</h3><br>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+    <p>Model Entry</p>
+</div>
+{% endblock %}
+
+
+</body>
+
+
+<footer>
+  <h5 style="align-content: center">Md. All Rabbi</h5>
+</footer>
+
+</html>
